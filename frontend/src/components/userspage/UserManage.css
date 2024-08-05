@@ -1,0 +1,108 @@
+/* UserManagementPage.css */
+
+.user-management-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-management-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.user-management-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-management-container th,
+.user-management-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.user-management-container th {
+  background-color: #007bff;
+  color: white;
+}
+
+.user-management-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.user-management-container tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.user-management-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.user-management-container button:hover {
+  background-color: #0056b3;
+}
+
+.user-management-container .reg-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.user-management-container .reg-button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-management-container .delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Added margin between delete and update buttons */
+}
+
+.user-management-container .delete-button:hover {
+  background-color: #c82333;
+}
+
+.user-management-container .actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-management-container .actions a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Adjustments for table responsiveness */
+@media (max-width: 600px) {
+  .user-management-container table {
+    overflow-x: auto;
+  }
+}

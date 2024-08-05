@@ -1,0 +1,69 @@
+/* Update.css */
+
+.auth-container {
+  max-width: 600px; /* Increased width for better layout */
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Changed to column for better form layout */
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"] {
+  width: 100%; /* Full width within form group */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+button {
+  width: 100%; /* Full-width button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  margin-bottom: 15px; /* Added margin for vertical gap */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button.secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+button.secondary:hover {
+  background-color: #5a6268;
+}

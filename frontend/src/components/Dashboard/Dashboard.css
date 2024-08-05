@@ -1,0 +1,101 @@
+/* Dashboard.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  word-break: break-word; /* Ensures long text wraps within the cell */
+  white-space: nowrap; /* Prevents content from breaking into multiple lines */
+  overflow: hidden; /* Hides any content that exceeds the cell width */
+  text-overflow: ellipsis; /* Adds ellipsis (...) when content overflows */
+  max-width: 300px; /* Adjust max-width as needed */
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.loading, .error {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  th, td {
+      padding: 10px 12px; /* Slightly larger padding for better visibility */
+      font-size: 14px;  /* Slightly larger font size for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  table, thead, tbody, th, td, tr {
+      display: block; /* Makes the table block to fit on smaller screens */
+  }
+
+  thead tr {
+      display: none; /* Hide header row */
+  }
+
+  tr {
+      margin-bottom: 15px;
+  }
+
+  td {
+      padding-left: 50%;
+      text-align: right;
+      position: relative;
+  }
+
+  td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: calc(50% - 20px);
+      padding-right: 10px;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+  }
+}
